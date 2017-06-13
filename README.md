@@ -20,5 +20,18 @@
 [详细文档](https://github.com/dueros/dumi_doc/blob/master/doc/directives/UiControl.md)
 
 
+## Bot-TV-custom-command
+[详细文档](Bot-TV-Custom-Command.md)
+
+
 ## Bot-Video-On-Demand
 [详细文档](Bot-Video-On-Demand.md)
+
+## Bot-App-Launcher
+[详细文档](https://github.com/dueros/dumi_doc/blob/master/doc/bot/app_launcher.md)
+
+## Bot-Audio-Music
+[详细文档](https://github.com/dueros/dumi_doc/blob/master/doc/bot/audio_music.md)
+
+## Bot-Duer-weather
+[详细文档](https://github.com/dueros/dumi_doc/blob/master/doc/bot/duer_weather.md)
