@@ -34,7 +34,7 @@
 [详细文档](https://github.com/dueros/dumi_doc/blob/master/doc/bot/audio_music.md)
 
 ## Bot-Duer-weather (天气)
-[详细文档](https://github.com/dueros/dumi_doc/blob/master/doc/bot/duer_weather.md)
+[详细文档](Bot-Duer-Weather.md)
 
 ## Bot-Aries-Genaral (通用信息)
 [详细文档](https://github.com/dueros/dumi_doc/blob/master/doc/bot/information_genernal.md)
