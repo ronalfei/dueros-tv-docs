@@ -27,14 +27,26 @@
 ## Bot-Video-On-Demand (视频点播服务<新>)
 [详细文档](Bot-Video-On-Demand.md)
 
+
 ## Bot-App-Launcher (应用控制)
 [详细文档](https://github.com/dueros/dumi_doc/blob/master/doc/bot/app_launcher.md)
+
 
 ## Bot-Audio-Music (音乐垂类)
 [详细文档](https://github.com/dueros/dumi_doc/blob/master/doc/bot/audio_music.md)
 
+
+## Bot-Audio-News (新闻垂类)
+[详细文档](https://github.com/dueros/dumi_doc/blob/master/doc/bot/audio_news.md)
+
+
 ## Bot-Duer-weather (天气)
 [详细文档](Bot-Duer-Weather.md)
 
+
 ## Bot-Aries-Genaral (通用信息)
 [详细文档](https://github.com/dueros/dumi_doc/blob/master/doc/bot/information_genernal.md)
+
+
+## Bot-Audio-Joke (笑话垂类)
+[详细文档](https://github.com/dueros/dumi_doc/blob/master/doc/bot/audio_joke.md)
