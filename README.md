@@ -45,7 +45,8 @@
 
 
 ## Bot-Aries-Genaral (通用信息)
-[详细文档](https://github.com/dueros/dumi_doc/blob/master/doc/bot/information_genernal.md)
+[详细文档(新)] (Bot-Aries-General.md)
+[详细文档(旧)](https://github.com/dueros/dumi_doc/blob/master/doc/bot/information_genernal.md)
 
 
 ## Bot-Audio-Joke (笑话垂类)
