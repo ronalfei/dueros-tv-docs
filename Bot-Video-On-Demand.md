@@ -253,3 +253,42 @@ resource.items.token| 该集电视剧的播放token
 
 
 
+### NLU返回的结构
+* Domain: FILM
+* Intent: SEARCH_FILM
+
+```
+Slots:{
+    film:影视剧名
+    type:影视剧类型
+    tv_station:电视台
+    series_film:系列电影名
+    actor:演员
+    director:导演
+    presentor:主持人
+    film_type:类型
+    film_tag:标签
+    descriptor:描述性内容
+    film_area:地区
+    film_language:语言
+    time_slot:上映时间
+    sort_type:排序方式
+    action_type:动作类型
+    is_free:是否免费播放
+    online_watch:是否在线播放
+    hd:是否高清播放
+    release:是否正在热播
+    pre_release:是否即将上映
+    whdepart:第几部
+    whepisode:第几集
+    whsuffix:后缀（部或集未知）
+    person_name:人（类型未知）
+    tv_role:角色
+    tv_award:奖项
+    tv_production_company:公司名
+    keyword:query关键词
+    keyword_*:query关键词
+}
+```
+
+
