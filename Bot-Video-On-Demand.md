@@ -5,8 +5,8 @@
 * 列表结果返回
 
     * Query样例: 我要看科幻电影
-```
 directives结果
+```
 {
 "header": {
     "namespace": "tv.view.list",
@@ -48,6 +48,7 @@ nlu结果
 * 详情结果返回
     * Query样例: 我要看肖申克的救赎
     * directives 结果
+
 ```
 "directives": [
             {
@@ -75,8 +76,9 @@ nlu结果
                     "tips": "为您找到肖申克的救赎"
                 }
             }
- ```
+```
     * Query样例: 我要看锦绣未央
+```
 "directives": [
             {
                 "header": {
@@ -122,6 +124,7 @@ nlu结果
                 }
             }
         ],
+```
 *** ps:  电影返回的结果和电视剧的有少许差别, 电视剧会放回items这个字段, 而电影没有 ***
 
 * 带有播放意图的结果返回
@@ -214,6 +217,8 @@ ps: 同样, 电视剧会比电影类型的多items字段
 ```
 
 * directives 字段解释
+
+
 字段| 含义
 ---|---
 namespace| 指令命名空间, 包含4种 tv.view.text/ tv.view.list/ tv.view.detail/ VideoPlayer
