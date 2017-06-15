@@ -4,19 +4,18 @@
 
 * [Bot-id](#Bot-id: ai.dueros.bot.video_on_demand)
 * [列表结果返回](#表结果返回)
-    * [NlU结果](#nlu结果)
 * [详情结果返回](#详情结果返回)
 * [带有播放意图的结果返回](#带有播放意图的结果返回)
 * [检索结果为空的时候返回](#检索结果为空的时候返回)
 * [directives 字段解释](#directives 字段解释)
 * [NLU返回的结构](#NLU返回的结构)
 
-##  Bot-id: ai.dueros.bot.video_on_demand
+## Bot-id: ai.dueros.bot.video_on_demand
 
 ##  列表结果返回
 
-    * Query样例: 我要看科幻电影
-directives结果
+* Query样例: 我要看科幻电影
+    * directives结果
 
 ```
 {
@@ -41,7 +40,7 @@ directives结果
 }
 ```
 
-### nlu结果
+    * nlu结果
 
 ```
     {
@@ -59,7 +58,7 @@ directives结果
 
 
 ## 详情结果返回
-    * Query样例: 我要看肖申克的救赎
+* Query样例: 我要看肖申克的救赎
     * directives 结果
 
 ```
@@ -144,7 +143,7 @@ directives结果
 
 ## 带有播放意图的结果返回
 
-    * Query样例: 播放欢乐颂第五集
+* Query样例: 播放欢乐颂第五集
     * directive 返回
 
 ```
@@ -185,7 +184,7 @@ directives结果
 
 ```
 
-    * Query样例: 播放肖申克的救赎
+* Query样例: 播放肖申克的救赎
     * 返回结果
 
 ```
