@@ -1,8 +1,19 @@
-## 视频点播Bot返回结果
+# 视频点播Bot返回结果
 
-* Bot-id: ai.dueros.bot.video_on_demand
+## 目录
 
-* 列表结果返回
+* [Bot-id](#Bot-id: ai.dueros.bot.video_on_demand)
+* [列表结果返回](#表结果返回)
+    * [NlU结果](#nlu结果)
+* [详情结果返回](#详情结果返回)
+* [带有播放意图的结果返回](#带有播放意图的结果返回)
+* [检索结果为空的时候返回](#检索结果为空的时候返回)
+* [directives 字段解释](#directives 字段解释)
+* [NLU返回的结构](#NLU返回的结构)
+
+##  Bot-id: ai.dueros.bot.video_on_demand
+
+##  列表结果返回
 
     * Query样例: 我要看科幻电影
 directives结果
@@ -30,7 +41,7 @@ directives结果
 }
 ```
 
-nlu结果
+### nlu结果
 
 ```
     {
@@ -47,7 +58,7 @@ nlu结果
 ```
 
 
-* 详情结果返回
+## 详情结果返回
     * Query样例: 我要看肖申克的救赎
     * directives 结果
 
@@ -131,7 +142,7 @@ nlu结果
 
 *** ps:  电影返回的结果和电视剧的有少许差别, 电视剧会放回items这个字段, 而电影没有 ***
 
-* 带有播放意图的结果返回
+## 带有播放意图的结果返回
 
     * Query样例: 播放欢乐颂第五集
     * directive 返回
@@ -209,7 +220,7 @@ nlu结果
 
 ps: 同样, 电视剧会比电影类型的多items字段
 
-* 检索结果为空的时候返回
+## 检索结果为空的时候返回
 
 ```
       {
@@ -223,7 +234,7 @@ ps: 同样, 电视剧会比电影类型的多items字段
       }
 ```
 
-* directives 字段解释
+##  directives 字段解释
 
 
 字段| 含义
@@ -253,7 +264,7 @@ resource.items.token| 该集电视剧的播放token
 
 
 
-### NLU返回的结构
+## NLU返回的结构
 * Domain: FILM
 * Intent: SEARCH_FILM
 
