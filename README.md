@@ -48,5 +48,11 @@
 [详细文档](Bot-Aries-General.md)
 
 
-## Bot-Audio-Joke (笑话垂类)
+## Bot-Audio-Joke (音频笑话垂类)
 [详细文档](https://github.com/dueros/dumi_doc/blob/master/doc/bot/audio_joke.md)
+
+
+## Bot-Text-Joke (文本笑话垂类)
+[详细文档](Bot-Text-Joke.md)
+
+
