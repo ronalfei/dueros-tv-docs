@@ -49,7 +49,7 @@
 
 
 ## Bot-Audio-Joke (音频笑话垂类)
-[详细文档](https://github.com/dueros/dumi_doc/blob/master/doc/bot/audio_joke.md)
+[详细文档](Bot-Audio-Joke.md)
 
 
 ## Bot-Text-Joke (文本笑话垂类)
