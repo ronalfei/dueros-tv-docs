@@ -2,15 +2,15 @@
 
 ## 目录
 
-* [Bot-id](#Bot-id: ai.dueros.bot.video_on_demand)
+* [Bot-id](#Bot-id:ai.dueros.bot.video_on_demand)
 * [列表结果返回](#表结果返回)
 * [详情结果返回](#详情结果返回)
 * [带有播放意图的结果返回](#带有播放意图的结果返回)
 * [检索结果为空的时候返回](#检索结果为空的时候返回)
-* [directives 字段解释](#directives 字段解释)
+* [directives字段解释](#directives字段解释)
 * [NLU返回的结构](#NLU返回的结构)
 
-## Bot-id: ai.dueros.bot.video_on_demand
+## Bot-id:ai.dueros.bot.video_on_demand
 
 ##  列表结果返回
 
@@ -40,7 +40,7 @@
 }
 ```
 
-    * nlu结果
+* nlu结果
 
 ```
     {
@@ -89,7 +89,7 @@
                 }
             }
 ```
-    * Query样例: 我要看锦绣未央
+* Query样例: 我要看锦绣未央
 
 ```
 "directives": [
@@ -217,7 +217,7 @@
 ],
 ```
 
-ps: 同样, 电视剧会比电影类型的多items字段
+*ps: 同样, 电视剧会比电影类型的多items字段*
 
 ## 检索结果为空的时候返回
 
@@ -233,7 +233,7 @@ ps: 同样, 电视剧会比电影类型的多items字段
       }
 ```
 
-##  directives 字段解释
+##  directives字段解释
 
 
 字段| 含义
@@ -291,7 +291,7 @@ Slots:{
     pre_release:是否即将上映
     whdepart:第几部
     whepisode:第几集
-
+    ----------以下为新增槽位----------
     whsuffix:后缀（部或集未知）
     person_name:人（类型未知）
     tv_role:角色
@@ -301,4 +301,4 @@ Slots:{
     keyword_*:query关键词
 }
 ```
-Ps: 从whsuffix开始, 后面几个槽位为新增槽位
+*Ps: 从whsuffix开始, 后面几个槽位为新增槽位*
