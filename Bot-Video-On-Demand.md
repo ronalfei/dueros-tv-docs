@@ -293,7 +293,7 @@ Slots:{
     whepisode:第几集
     ----------以下为新增槽位----------
     whsuffix:后缀（部或集未知）
-    person_name:人（类型未知）
+    person_name:相关人物   //建议检索方式: 可进行演员/导演/主持人/嘉宾的检索
     tv_role:角色
     tv_award:奖项
     tv_production_company:公司名
