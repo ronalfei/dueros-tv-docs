@@ -3,9 +3,9 @@
 ## Bot-id
 ai.dueros.bot.tv_control
 
-## 返回结果设计原型
 
-```
+## 设计原型
+
     {
     "header": {
         "namespace": "tv.xxx",
@@ -15,7 +15,7 @@ ai.dueros.bot.tv_control
         "extend":[]
     }
     }
-```
+
 1. 通过header中的namespace和name确定一种指令 
 2. payload为指令附加的参数 
 3. extend为扩展字段, 通常情况下都为空, 用户不需关心 
@@ -23,12 +23,10 @@ ai.dueros.bot.tv_control
 5. namespace用小写和”.”分隔 
 6. name采用首字母大写的驼峰命名法
 
-### 详细指令列表
-
-* QUERY:开机
+## 详细指令列表
+QUERY:开机
 tv.system.command.TVOn
 
-```
     {
     "header":{
         "namespace":"tv.system.command",
@@ -38,11 +36,10 @@ tv.system.command.TVOn
     "kv_extended":[] //kv_extended为额外信息的添加，做接口用，目前可忽略
     }
     }
-```
-* QUERY:重启
 
+QUERY:重启
 tv.system.command.Restart
-```
+
     {
     "header":{
         "namespace":"tv.system.command",
@@ -52,11 +49,10 @@ tv.system.command.Restart
     "kv_extended":[]
     }
     }
-```
 
 QUERY:关机
 tv.system.command.TVOff
-```
+
     {
     "header":{
         "namespace":"tv.system.command",
@@ -66,11 +62,10 @@ tv.system.command.TVOff
     "kv_extended":[]
     }
     }
-```
 
 QUERY:休眠
 tv.system.command.Sleep
-```
+
     {
     "header":{
         "namespace":"tv.system.command",
@@ -80,11 +75,10 @@ tv.system.command.Sleep
     "kv_extended":[]
     }
     }
-```
 
 QUERY:唤醒
 tv.system.command.Wake
-```
+
     {
     "header":{
         "namespace":"tv.system.command",
@@ -94,13 +88,11 @@ tv.system.command.Wake
     "kv_extended":[]
     }
     }
-```
 
 QUERY:待机
 **待机为V3新增功能**
 tv.system.command.Wait
 
-```
     {
     "header":{
         "namespace":"tv.system.command",
@@ -110,11 +102,10 @@ tv.system.command.Wait
     "kv_extended":[]
     }
     }
-```
 
 QUERY:音量增大
 tv.system.volume.Up
-```
+
     {
     "header":{
         "namespace":"tv.system.volume",
@@ -125,11 +116,10 @@ tv.system.volume.Up
     "kv_extended":[]
     }
     }
-```
 
 QUERY:声音增大3
 tv.system.volume.Up
-```
+
     {
     "header":{
         "namespace":"tv.system.volume",
@@ -140,11 +130,10 @@ tv.system.volume.Up
     "kv_extended":[]
     }
     }
-```
 
 QUERY:音量降低
 tv.system.volume.Down
-```
+
     {
     "header":{
         "namespace":"tv.system.volume",
@@ -155,11 +144,10 @@ tv.system.volume.Down
     "kv_extended":[]
     }
     }
-```
 
 QUERY:音量减小3
 tv.system.volume.Down
-```
+
     {
     "header":{
         "namespace":"tv.system.volume",
@@ -170,26 +158,25 @@ tv.system.volume.Down
     "kv_extended":[]
     }
     }
-```
 
 QUERY:音量调为3
 tv.system.volume.Set
-```
+
     {
     "header":{
         "namespace":"tv.system.volume",
         "name":"Set"
     },
     "payload":{
-    "value":3,
+    #201706141139修改注释
+    "value":3,//若query为音量调到最大/最小，均可支持，value值为max/min
     "kv_extended":[]
     }
     }
-```
 
 QUERY:静音
 tv.system.volume.Mute
-```
+
     {
     "header":{
         "namespace":"tv.system.volume",
@@ -200,11 +187,10 @@ tv.system.volume.Mute
     "kv_extended":[]
     }
     }
-```
 
 QUERY:取消静音
 tv.system.volume.Mute
-```
+
     {
     "header":{
         "namespace":"tv.system.volume",
@@ -215,12 +201,9 @@ tv.system.volume.Mute
     "kv_extended":[]
     }
     }
-```
 ****注：V2版本静音与取消静音为Mute和Unmute两个意图，V3版本将其定位一个意图Mute，通过槽位值来区分是静音还是取消静音****
-
-
 QUERY:增大对比度
-```
+
         {
             "header":{
                 "namespace":"tv.system.contrast",
@@ -233,11 +216,9 @@ QUERY:增大对比度
                 ]
             }
         }
-```
-    
+       
 QUERY:降低对比度
 
-```
     {
         "header":{
             "namespace":"tv.system.contrast",
@@ -250,10 +231,10 @@ QUERY:降低对比度
             ]
         }
     }
-```
+
 QUERY:对比度
 tv.system.command.Go
-```
+
     {
     "header":{
         "namespace":"tv.system.command",
@@ -264,10 +245,9 @@ tv.system.command.Go
         "kv_extended":[]
     }
     }
-```
 
 QUERY:调高亮度
-```
+
     {
                 "header":{
                     "namespace":"tv.system.light",
@@ -278,10 +258,9 @@ QUERY:调高亮度
                     "kv_extended":[]
                 }
             }
-```
 
 QUERY:降低亮度
-```
+
     {
                 "header":{
                     "namespace":"tv.system.light",
@@ -292,11 +271,10 @@ QUERY:降低亮度
                     "kv_extended":[]
                 }
             }
-```
 
 QUERY:退出
 tv.system.command.Exit
-```
+
     {
     "header":{
         "namespace":"tv.system.command",
@@ -306,11 +284,10 @@ tv.system.command.Exit
     "kv_extended":[]
     }
     }
-```
 
 QUERY:返回
 tv.system.command.Back
-```
+
     {
     "header":{
         "namespace":"tv.system.command",
@@ -320,11 +297,10 @@ tv.system.command.Back
     "kv_extended":[]
     }
     }
-```
 
 QUERY:退出设置
 tv.system.command.Exit
-```
+
     {
     "header":{
         "namespace":"tv.system.command",
@@ -335,11 +311,10 @@ tv.system.command.Exit
     "kv_extended":[]
     }
     }
-```
 
 QUERY:返回主页
 tv.system.command.Go
-```
+
     {
     "header":{
         "namespace":"tv.system.command",
@@ -350,11 +325,10 @@ tv.system.command.Go
         "kv_extended":[]
     }
     }
-```
 
 QUERY:上一集
 tv.player.control.Previous
-```
+
     {
     "header":{
         "namespace":"tv.player.control",
@@ -364,13 +338,11 @@ tv.player.control.Previous
     "kv_extended":[]
     }
     }
-```
 ****注：上一页，下一页，上一集，下一集中V2版本均有返回槽位值value:1,V3版本中去掉****
-
 
 QUERY:下一集
 tv.player.control.Next
-```
+
     {
         "header": {  
              "namespace": "tv.player.control", 
@@ -380,11 +352,10 @@ tv.player.control.Next
              "extend": {}
          }
       } 
-``
 
 QUERY:第一集
 tv.player.control.Episode
-```
+
     {
     "header":{
         "namespace":"tv.player.control",
@@ -395,11 +366,10 @@ tv.player.control.Episode
     "kv_extended":[]
     }
     }
-```
 
 QUERY:暂停
 tv.player.control.Pause
-```
+
     {
     "header":{
         "namespace":"tv.player.control",
@@ -409,11 +379,10 @@ tv.player.control.Pause
     "kv_extended":[]
     }
     }
-```
 
 QUERY:取消暂停/播放/继续
 tv.player.control.Continue
-```
+
     {
     "header":{
         "namespace":"tv.player.control",
@@ -423,13 +392,11 @@ tv.player.control.Continue
     "kv_extended":[]
     }
     }
-```
 ***注：V2版本中将暂停、取消暂停归为Pause意图，通过槽位值来进行区分，V3版本改为Pause和Continue两个意图***
-
 
 QUERY:快进
 tv.player.control.FastForward
-```  
+  
       {
             "header": {  
                   "namespace": "tv.player.control", 
@@ -440,11 +407,10 @@ tv.player.control.FastForward
                    "extend": { }
                  }
             }
-```
 
 QUERY:快退
 tv.player.control.BackForward
-```
+
     {
     "header":{
         "namespace":"tv.player.control",
@@ -455,26 +421,24 @@ tv.player.control.BackForward
     "kv_extended":[]
     }
     }
-```
 
 QUERY:从第一小时处开始播放
 tv.player.control.Goto
-```
+
     {
     "header":{
         "namespace":"tv.player.control",
         "name":"Goto"
     },
     "payload":{
-    "offset":"1小时",
+    "offset":"3600",
     "kv_extended":[]
     }
     }
-```
 
 QUERY:3倍速播放
 tv.player.control.Speed
-```
+
     {
     "header":{
         "namespace":"tv.player.control",
@@ -485,11 +449,10 @@ tv.player.control.Speed
     "kv_extended":[]
     }
     }
-```
 
 QUERY:切换到3D模式
 tv.player.control.Swith
-```
+
     {
     "header":{
         "namespace":"tv.player.control",
@@ -500,11 +463,10 @@ tv.player.control.Swith
         "kv_extended":[]
     }
     }
-```
 
 QUERY:下一页
 tv.system.page.Next
-```
+
     {
     "header":{
         "namespace":"tv.system.page",
@@ -514,10 +476,9 @@ tv.system.page.Next
     "kv_extended":[]
     }
     }
-```
 
 QUERY:上一页
-```
+
     {
     "header": {
         "namespace": "tv.system.page",
@@ -527,10 +488,9 @@ QUERY:上一页
         "extend": {}
     }
     }
-```
 
 QUERY:第一页
-```
+
     {
     "header": {
         "namespace": "tv.system.page",
@@ -541,11 +501,10 @@ QUERY:第一页
         "extend": {}
     }
     }
-```
 
 QUERY:第二行第二个
 tv.system.command.location
-```
+
     {
     "header":{
         "namespace":"tv.system.command",
@@ -557,5 +516,35 @@ tv.system.command.location
     "kv_extended":[]
     }
     }
-```
+QUERY:升级
+tv.system.command.location
+
+    {
+    "header":{
+        "namespace":"tv.system.command",
+        "name":"UpdateSystem"
+    },
+    "payload":{
+    "kv_extended":[]
+    }
+    }
+QUERY:系统升级
+tv.system.command.location
+
+    {
+    "header":{
+        "namespace":"tv.system.command",
+        "name":"UpdateSystem"
+    },
+    "payload":{
+    "name":"系统",
+    "kv_extended":[]
+    }
+    }
+
+
+
+
+
+
 
