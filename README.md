@@ -88,4 +88,5 @@
 ## Bot-Text-Joke (文本笑话垂类)
 [详细文档](Bot-Text-Joke.md)
 
-
+## Bot-Poem (度秘写诗)
+[详细文档](Bot-Poem.md)
