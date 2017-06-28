@@ -218,7 +218,7 @@ QUERY:增大对比度
         }
        
 QUERY:降低对比度
-
+```
     {
         "header":{
             "namespace":"tv.system.contrast",
@@ -231,7 +231,7 @@ QUERY:降低对比度
             ]
         }
     }
-
+```
 QUERY:对比度
 tv.system.command.Go
 
@@ -517,8 +517,8 @@ tv.system.command.location
     }
     }
 QUERY:升级
-tv.system.command.location
 
+```
     {
     "header":{
         "namespace":"tv.system.command",
@@ -528,8 +528,9 @@ tv.system.command.location
     "kv_extended":[]
     }
     }
+```
 QUERY:系统升级
-tv.system.command.location
+
 
     {
     "header":{
@@ -542,8 +543,217 @@ tv.system.command.location
     }
     }
 
+**
 
+# 2017-06-24新增功能点
 
+**
+
+### 1、QUERY:倒数第二行最后一个 
+tv.system.command.location
+```
+{
+"header":{
+    "namespace":"tv.system.command",
+    "name":"location"
+},
+"payload":{
+"re_col":1,
+"re_row":2，//re_XXX表示倒数
+"kv_extended":[]
+}
+}
+```
+### 2、QUERY:切换到第二个节目
+
+tv.system.command.location
+```
+{
+"header":{
+    "namespace":"tv.system.command",
+    "name":"location"
+},
+"payload":{
+"num":2,
+"kv_extended":[]
+}
+}
+```
+
+### 3、QUERY：跳过片头
+
+tv.player.control.goto
+```
+{
+"header":{
+    "namespace":"tv.player.control",
+    "name":"Goto"
+},
+"payload":{
+"skip_title":"true"
+"kv_extended":[]
+}
+}
+```
+
+### 4、QUERY：调整色彩度/色彩度
+
+```
+{
+            "header":{
+                "namespace":"tv.system.color",
+                "name":"Adjust"
+            },
+            "payload":{
+                "kv_extended":[]
+            }
+        }
+   
+```
+### 4.1、QUERY：调整亮度/亮度
+```
+{
+            "header":{
+                "namespace":"tv.system.light",
+                "name":"Adjust"
+            },
+            "payload":{
+                "kv_extended":[]
+            }
+        }
+```
+### 4.2、QUERY：调整对比度/对比度
+```
+{
+            "header":{
+                "namespace":"tv.system.contrast,
+                "name":"Adjust"
+            },
+            "payload":{
+                "kv_extended":[]
+            }
+        }
+```
+* 注：2016-06-24前将query=“对比度”放在tv.system.command.Go中，此次修改将其拿出作为一个新的意图 
+
+### 5、QUERY：色彩度增加30
+```
+{
+            "header":{
+                "namespace":"tv.system.color",
+                "name":"Up"
+            },
+            "payload":{
+                "value":30 //默认值为2
+                "kv_extended":[]
+            }
+        }
+```
+### 6、QUERY：色彩度降低30
+```
+{
+            "header":{
+                "namespace":"tv.system.color",
+                "name":"Down"
+            },
+            "payload":{
+                "value":30 //默认值为2
+                "kv_extended":[]
+            }
+        }
+```
+### 7、QUERY：色彩度增加到30
+```
+{
+            "header":{
+                "namespace":"tv.system.color",
+                "name":"Set"
+            },
+            "payload":{
+                "value":30,
+                "kv_extended":[]
+            }
+        }
+```
+### 8、QUERY：对比度增加到30
+```
+{
+            "header":{
+                "namespace":"tv.system.contrast",
+                "name":"Set"
+            },
+            "payload":{
+                "value":30,
+                "kv_extended":[]
+            }
+        }
+```
+### 9、QUERY：亮度增加到30
+```
+{
+            "header":{
+                "namespace":"tv.system.light",
+                "name":"Set"
+            },
+            "payload":{
+                "value":30,
+                "kv_extended":[]
+            }
+        }
+```
+### 10、QUERY：调成TV模式/切换到HDMI1
+```
+ {
+                "header":{
+                    "namespace":"tv.system.command",
+                    "name":"Signal"
+                },
+                "payload":{
+                    "name":"tv", //可以是HDMI1，HDMI2，vga等
+                    "kv_extended":[]
+                }
+            }
+```
+### 11、QUERY：截图
+```
+ {
+                    "header":{
+                        "namespace":"tv.system.command",
+                        "name":"Cmd"
+                    },
+                    "payload":{
+                        "name":"截图", //槽位值：截图，画面校正，清空内存，一键优化，                       
+                        "kv_extended":[]
+                    }
+                }
+```
+### 12、QUERY：最后一页
+```
+{
+    "header": {
+        "namespace": "tv.system.page",
+        "name": "Goto"
+    },
+    "payload": {
+        "re_page_num":1,
+        "extend": {}
+    }
+    }
+```
+### 13、QUERY：最后一集 
+tv.player.control.Episode
+```
+{
+"header":{
+    "namespace":"tv.player.control",
+    "name":"Episode"
+},
+"payload":{
+"re_episode":1,
+"kv_extended":[]
+}
+}
+```
 
 
 
