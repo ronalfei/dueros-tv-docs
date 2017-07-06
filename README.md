@@ -90,3 +90,6 @@
 
 ## Bot-Poem (度秘写诗)
 [详细文档](Bot-Poem.md)
+
+## Bot-Faq(度秘写诗)
+[详细文档](Bot-Faq.md)
