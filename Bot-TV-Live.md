@@ -1,5 +1,7 @@
 # 切换频道
 
+## BOT-ID: ai.dueros.bot.tv_live
+
 ## 示例1 打开CCTV1高清
 
 ### DA输出
