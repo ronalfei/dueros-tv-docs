@@ -3,7 +3,7 @@
 
 
 ## Bot-TV-Control (电视通用控制指令BOT)
-[详细文档](Bot-TV-Control.md)
+[详细文档](docs/Bot-TV-Control.md)
 
 * ChangeLog
     * 详见文档中的黑体部分
@@ -11,7 +11,7 @@
 
 
 ## Bot-Image-Recognition (图像识别)
-[详细文档](Bot-Image-Recognition.md)
+[详细文档](docs/Bot-Image-Recognition.md)
 
 * ChangeLog
     * 整体的方式有变动, 逻辑上修改得更加友好, 对接时需直接参考[详细文档]
@@ -19,7 +19,7 @@
 
 
 ## Bot-TV-Live (电视直播)
-[详细文档](Bot-TV-Live.md)
+[详细文档](docs/Bot-TV-Live.md)
 
 * ChangeLog
     * 1. Bot-id的变化: smart_tv -> ai.dueros.bot.tv_live
@@ -33,7 +33,7 @@
 
 
 ## Bot-Video-On-Demand (视频点播服务<新>)
-[详细文档](Bot-Video-On-Demand.md)
+[详细文档](docs/Bot-Video-On-Demand.md)
 
 * ChangeLog
     * 1. Bot-id的变化: smart_tv -> ai.dueros.bot.video_on_demand
@@ -58,7 +58,7 @@
 
 
 ## Bot-TV-custom-command (通用自定义指令)
-[详细文档](Bot-TV-Custom-Command.md)
+[详细文档](docs/Bot-TV-Custom-Command.md)
 
 
 ## Bot-App-Launcher (应用控制)
@@ -74,25 +74,25 @@
 
 
 ## Bot-Duer-weather (天气)
-[详细文档](Bot-Duer-Weather.md)
+[详细文档](docs/Bot-Duer-Weather.md)
 
 
 ## Bot-Aries-Genaral (通用信息)
-[详细文档](Bot-Aries-General.md)
+[详细文档](docs/Bot-Aries-General.md)
 
 
 ## Bot-Audio-Joke (音频笑话垂类)
-[详细文档](Bot-Audio-Joke.md)
+[详细文档](docs/Bot-Audio-Joke.md)
 
 
 ## Bot-Text-Joke (文本笑话垂类)
-[详细文档](Bot-Text-Joke.md)
+[详细文档](docs/Bot-Text-Joke.md)
 
 ## Bot-Poem (度秘写诗)
-[详细文档](Bot-Poem.md)
+[详细文档](docs/Bot-Poem.md)
 
 ## Bot-Faq(度秘写诗)
-[详细文档](Bot-Faq.md)
+[详细文档](docs/Bot-Faq.md)
 
 ## 媒资数据对接文档
-[详细文档](TV-Vod-Metadata.md)
+[详细文档](docs/TV-Vod-Metadata.md)
