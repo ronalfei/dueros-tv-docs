@@ -93,3 +93,6 @@
 
 ## Bot-Faq(度秘写诗)
 [详细文档](Bot-Faq.md)
+
+## 媒资数据对接文档
+[详细文档](TV-Vod-Metadata.md)
