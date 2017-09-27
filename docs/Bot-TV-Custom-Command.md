@@ -130,60 +130,7 @@ dict.dic文件如下
 }
 ```
 
-
-
-# 其他描述
-##  TV数据导入NLU平台目录结构
-
-意图词表文件目录
-------
-     $NLUPATH/TV/{$appId}/intents/intent.dic
-
-实体词表文件目录
-------
-     $NLUPATH/TV/{$appId}/entity/dict.dic
-
-意图词表文件格式
---------
-     {vertical_name}\t{$intent_name}\t{pattern} 
-      
-实体词表
------
-     {word1}\r\n{word2}\r\n
-     
-pattern表达式
-----------
-    [slot_name][D:dic_name][W:1-9]
-    
-    [slot_name]表示槽位
-    [D:dic_name]表示词典
-    [W:1-9] 占位符，比如pattern为[W:1-8],则召回所有1-8个字节的query
-
-样例
---
-爱奇艺 
-
-    appId=dm95BBA8BD85310928
-> appid是分配给厂商的唯一id, 在自定义指令上是会通过appid来做区分的, 厂商没有的话, 可以找我们申请
-
-实体词表文件存放的目录
-
-    /home/work/nlu/TV/dm95BBA8BD85310928/intents/intent.dic
-
-其中intent.dic的内容
-```
-ai.dueros.device_interface.thirdparty.XXXTV.tv_command \t Open \t 打开[device]
-ai.dueros.device_interface.thirdparty.XXXTV.tv_command \t Close \t 关闭[model]
-ai.dueros.device_interface.thirdparty.XXXTV.tv_command \t Upgrade \t 升级
-ai.dueros.device_interface.thirdparty.XXXTV.tv_command \t Upgrade \t [D:check]系统更新
-ai.dueros.device_interface.thirdparty.XXXTV.tv_command \t SwitchMode \t [model]
-ai.dueros.device_interface.thirdparty.XXXTV.tv_command \t SwitchMode \t [model]
-ai.dueros.device_interface.thirdparty.XXXTV.tv_command \t SwitchMode  \t [model]
-ai.dueros.device_interface.thirdparty.XXXTV.tv_command \t SwitchMode  \t [model]
-ai.dueros.device_interface.thirdparty.XXXTV.tv_command \t SwitchMode  \t [model]
-ai.dueros.device_interface.thirdparty.XXXTV.tv_command \t AutoSet \t 调正画面
-ai.dueros.device_interface.thirdparty.XXXTV.tv_command \t SwitchChannel \t 调到[num]频道
-```
+#注：
 num为系统函数，不需要单独提供
 
 将intent.dic,dict.dic打包到appid命名的文件夹提交到baidu方即可
