@@ -5,7 +5,7 @@
 1. 找我们申请一个appid: dm95BBA8BD85310928
 2.  利用appid建立一个文件夹, 在该文件夹里编写自定义文件
 3. 首先编写意图文件intent.dic, 示例如下:
-#注 第一列固定命名：ai.dueros.device_interface.thirdparty.厂商名.指令名，第二列采用驼峰命名法
+# 注 第一列固定命名：ai.dueros.device_interface.thirdparty.厂商名.指令名，第二列采用驼峰命名法
 ```
 ai.dueros.device_interface.thirdparty.XXXTV.tv_command \t Open \t 打开[device]
 ai.dueros.device_interface.thirdparty.XXXTV.tv_command \t Close \t 关闭[model]
@@ -130,7 +130,7 @@ dict.dic文件如下
 }
 ```
 
-#注：
+# 注：
 num为系统函数，不需要单独提供
 
 将intent.dic,dict.dic打包到appid命名的文件夹提交到baidu方即可
