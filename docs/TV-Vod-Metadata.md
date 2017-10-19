@@ -48,7 +48,7 @@
 |28 | poster_url | 海报url | 非空，输出string
 |29 | thumb_url | 海报缩略图url | 非空，输出string
 |30 | token | 播放url或者是播放id | 非空，输出string
-|31 | extend| 资源方自定义数据，不大于65000 | 无，输出string
+|31 | extend| 资源方自定义数据，不大于5000 | 无，输出string
 |32 | score| 评分 | 无，输出float
     
 ### 重要字段说明
