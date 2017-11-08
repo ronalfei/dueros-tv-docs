@@ -1,8 +1,8 @@
 ## 通用识图接口文档
 #### 整体逻辑
-1. 用户发query：帮我看看这是什么水果
-2. 服务端返回ImageRecognizer.StartRecognize的directive指令, 包含type参数：水果
-    ```
+1. 用户发query：帮我看看这是什么花
+2. 服务端返回ImageRecognizer.StartRecognize的directive指令, 包含type参数：flower
+```
     {
        "header": {
             "namespace":  "ImageRecognizer",
@@ -10,15 +10,15 @@
             "message_id": "message_id-1344"
         },
         "payload": {
-            "type":"水果"，
-            "position":"",
-            "offsite":""
+            "type":"flower"，
+            "direction":"",
+            "offset":""
         }
     }
-    ```
+```
   a.用户发query：右边第一个女人是谁
   b.服务端返回ImageRecognizer.StartRecognize的directive指令, 包含type参数：female
-   ```
+```
     {
        "header": {
             "namespace":  "ImageRecognizer",
@@ -27,28 +27,28 @@
         },
         "payload": {
             "type":"female"，
-            "position":"left",
-            "offsite":"1"
+            "direction":"left",
+            "ffset":"1"
         }
     }
-    ```
+```
 3. 客户端拍照（或者截图、让用户选图片）后发起ImageRecognizer.Recognize 的event, 包含type参数：female，方向参数：position,位置参数：offsite,url参数：图片地址，message_id是步骤2中的message_id
 ```
-{
-    "device_event":{
-        "header": {
-            "namespace":  "ImageRecognizer",
-            "name":  "Recognize",
-            "message_id": "message_id-1344"
-        },
-        "payload": {
-            "type":"female", //可选
-            "position"："left"，
-            "offsite":"1"
-            "url":"http://f10.baidu.com/it/u=2640880481,1295783988&fm=72"
+    {
+        "device_event":{
+            "header": {
+                "namespace":  "ImageRecognizer",
+                "name":  "Recognize",
+                "message_id": "message_id-1344"
+            },
+            "payload": {
+                "type":"female", //可选
+                "direction"："left"，
+                "offset":"1"
+                "url":"http://f10.baidu.com/it/u=2640880481,1295783988&fm=72"
+            }
         }
     }
-}
 ```
 ps: 注意发起的请求是个event, 需要放在device_event里面
 
@@ -96,8 +96,8 @@ ps: 注意发起的请求是个event, 需要放在device_event里面
 logo识别: logo
 汽车识别: car
 
-#### position可能的类型有如下五种：
+#### direction可能的类型有如下五种：
 前后左右中：front/behind/left/right/middle（默认值为left）
 
-#### offsite取值范围是（1~10）：
+#### offset取值范围是（1~10）：
 默认值为1
