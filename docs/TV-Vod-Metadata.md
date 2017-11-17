@@ -271,11 +271,7 @@ application/json
      * @param        $url 接口地址
      *
      * @return string
-     * 成功返回
-        {
-            status: 0,
-            msg: "ok"
-        }
+     * 成功返回 {status: 0,msg: "ok"}
  **/
 function post_($data = "", $url) {
 		$opts = array(
