@@ -264,4 +264,25 @@ application/json
 |2003 | 字段值错误 | {"status":2003,"msg":"resource_status error id:1251 line:3"} | 
 |2004 | 同一个请求中，partner不唯一 | {"status":2004,"msg":"partner is not unique line:3"} | 
 
-
+### php代码发送数据示例
+```php
+/**
+     * @param string $data 需要发送的json格式媒资数据
+     * @param        $url 接口地址
+     *
+     * @return string
+     * 成功返回 {status: 0,msg: "ok"}
+ **/
+function post_($data = "", $url) {
+		$opts = array(
+        'http' => array(
+            'method'  => "POST",
+            'header'  => "Content-Type: application/json\r\n",
+            'content' => $data,
+			)
+		);
+		$context = stream_context_create($opts);
+		$ret = file_get_contents($url, false, $context);
+		return $ret;
+	}
+```
