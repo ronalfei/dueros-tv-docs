@@ -12,6 +12,10 @@
 
 ## Bot-id:ai.dueros.bot.video_on_demand
 
+## Bot-id:ai.dueros.bot.video_on_demand_fallback
+
+**注意: 新增了一种兜底检索的bot-id, 其协议和vod没有区别**
+
 ##  列表结果返回
 
 * Query样例: 我要看科幻电影
