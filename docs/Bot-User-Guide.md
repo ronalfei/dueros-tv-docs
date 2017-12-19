@@ -51,12 +51,12 @@
       {
         "priority": 1,
         "title": "电视点播",
-        "querys": ["我想看大鱼海棠", "经典电影", ...]
+        "querys": ["我想看大鱼海棠", "经典电影", ...]
       },
       {
         "priority": 2,
         "title": "人脸识别",
-        "querys": ["这个人是谁", "左边第一个女的是谁", ...]
+        "querys": ["这个人是谁", "左边第一个女的是谁", ...]
       },
       ...
     ]
@@ -89,7 +89,7 @@
     "namespace": "ai.dueros.device_interface.screen",
     "name": "RenderHint",
     "messageId": "message_id-1244,
-    "dialogRequestId": "dialog_request_id-1244"
+    "dialogRequestId": "diaalog_request_id-1244"
   },
   "payload": {
     "token": "token-1244",
