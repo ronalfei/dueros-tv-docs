@@ -16,7 +16,11 @@
 * ChangeLog
     * 整体的方式有变动, 逻辑上修改得更加友好, 对接时需直接参考[详细文档]
 
+## Bot-User-Guide (通用引导)
+[详细文档](docs/Bot-User-Guide.md)
 
+* ChangeLog
+    * 整体的方式有变动, 逻辑上修改得更加友好, 对接时需直接参考[详细文档]
 
 ## Bot-TV-Live (电视直播)
 [详细文档](docs/Bot-TV-Live.md)
