@@ -97,11 +97,18 @@
 ## Bot-Text-Joke (文本笑话垂类)
 [详细文档](docs/Bot-Text-Joke.md)
 
+
 ## Bot-Poem (度秘写诗)
 [详细文档](docs/Bot-Poem.md)
 
+
 ## Bot-Faq(度秘写诗)
 [详细文档](docs/Bot-Faq.md)
+
+
+## Bot-Phone-Call (打电话垂类)
+[详细文档](docs/bot-Phone-Call.md)
+
 
 ## 媒资数据对接文档
 [详细文档](docs/TV-Vod-Metadata.md)

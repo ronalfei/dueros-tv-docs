@@ -12,44 +12,43 @@
     version: 1.2
     
 ## 字段说明
-    json中的value都是字符串类型，编码为utf-8。
+	1、json中的value都是字符串类型，编码为utf-8。
+	2、所有字段都必须提交，非必填字段请参照列表中说明填写
 
-
-
-| 序号 | 字段 | 描述 | 接入层校验 |
-|---|---|---|---|
-|1 | id | 物料的id，全局唯一 | 非空，输出string
-|2 | pid | <div>父id，如果是非剧集型数据(例如电影），那么pid=id；同一部剧集里的不同数据的pid要一致，不同剧集之间数据的pid不能相同，</div><div>比如亮剑电视剧中共有20集数据，每条数据的pid=345，那么任意其他数据的pid就不能再等于345了</div> | 非空，输出string
-|3 | provider | 视频数据来源方 | 无，输出string
-|4 | partner | 合作方、业务方 | 校验是否符合配置，输出string
-|5 | resource_status | 上下线标识，1：上线；-1下线 | 取值1or-1，输出int
-|6 | name | 影视或者资源名称 | 无，输出string
-|7 | serial_name | 系列名称 | 无，输出string
-|8 | alias_name | 别名，用/分割 | 无，输出string
-|9 | type | 类型（电影、电视剧、综艺、动漫、纪录片） | 无，输出string
-|10 | category | 分类，用/分割 | 无，输出string
-|11 | source_type | 资源的其他分类字段（业务方可以根据自己需要将某个分类放入该字段） | 无，输出string
-|12 | tag | 标签，用/分割 | 无，输出string
-|13 | duration | 时长(秒) | 校验是否是int，输出int，如果输入空字符串，输出0
-|14 | season | 季、部 | 校验是否是int，输出int，如果输入空字符串，输出1
-|15 | total_episodes | 总集数 | 校验是否是int，输出int，如果输入空字符串，输出1
-|16 | episode | 当前集 | 校验是否是int，输出int，如果输入空字符串，输出1
-|17 | director | 导演，用/分割 | 无，输出string
-|18 | actor | 演员， 用/分割 | 无，输出string
-|19 | region | 地域，用/分割 | 无，输出string
-|20 | release_date | 发布年代，精确到年 | 数据格式为yyyy-mm-dd或者yyyy,输出yyyy(int）
-|21 | update_time | 更新时间， yyyyMMDDhhmmSS | 校验是否是bigint，输出bigint
-|22 | cost | 资费信息，（收费/免费） | 无，输出string
-|23 | hot | 热门值（业务方根据自己的计算公式计算该字段值，0~100） | 校验是否是int 并且符合区间0~100，输出int，如果输入空字符串，输出0
-|24 | weight | 权重，权重高的数据可能会被优先展示，0~100 | 校验是否是int 并且符合区间0~100，输出int，如果输入空字符串，输出0
-|25 | language | 语言，(中文/英文等) | 无，输出string
-|26 | definition | 清晰度，（超清、高清、流畅等） | 无，输出string
-|27 | introduction | 视频简介 | 无，输出string
-|28 | poster_url | 海报url | 非空，输出string
-|29 | thumb_url | 海报缩略图url | 非空，输出string
-|30 | token | 播放url或者是播放id | 非空，输出string
-|31 | extend| 资源方自定义数据，不大于5000 | 无，输出string
-|32 | score| 评分 | 无，输出float
+| 序号 | 字段 | 描述 | 字段类型 | 是否必填 |
+|---|---|---|---|---|
+|1 | id | 物料的id，全局唯一 | string | 必填
+|2 | pid | <div>父id，如果是非剧集型数据(例如电影），那么pid=id；同一部剧集里的不同数据的pid要一致，不同剧集之间数据的pid不能相同，</div><div>比如亮剑电视剧中共有20集数据，每条数据的pid=345，那么任意其他数据的pid就不能再等于345了</div> | string | 必填
+|3 | provider | 视频数据来源方 | string | 非必填，可以是空字符串
+|4 | partner | 合作方、业务方 | string | 必填
+|5 | resource_status | 上下线标识，1：上线；-1下线 | int | 必填
+|6 | name | 影视或者资源名称 | string | 必填
+|7 | serial_name | 系列名称 | string | 非必填，可以是空字符串
+|8 | alias_name | 别名，用/分割 | string | 非必填，可以是空字符串
+|9 | type | 类型（电影、电视剧、综艺、动漫、纪录片） | string | 必填
+|10 | category | 分类，用/分割 | string | 非必填,可以是空字符串
+|11 | source_type | 资源的其他分类字段（业务方可以根据自己需要将某个分类放入该字段） | string | 否，可以是空字符串
+|12 | tag | 标签，用/分割 | string | 非必填,可以是空字符串
+|13 | duration | 时长(秒) | int | 非必填，默认为0
+|14 | season | 季、部 | int | 非必填,默认为1
+|15 | total_episodes | 总集数 | int| 非必填，默认为1
+|16 | episode | 当前集 | int| 非必填，默认为1
+|17 | director | 导演，用/分割 | string | 非必填，可以为空串
+|18 | actor | 演员， 用/分割 | string | 非必填，可以为空串
+|19 | region | 地域，用/分割 | string | 非必填，可以为空串
+|20 | release_date | 发布年代，精确到年,数据格式为yyyy-mm-dd或者yyyy,输出yyyy | int | 非必填
+|21 | update_time | 更新时间， yyyyMMDD（示例：20171108） | int | 非必填
+|22 | cost | 资费信息（付费/免费/vip） | string | 非必填，可以为空串，非空则三选一
+|23 | hot | 热门值（业务方根据自己的计算公式计算该字段值，0~100） | int | 非必填，默认为0
+|24 | weight | 权重，权重高的数据可能会被优先展示，0~100 | int |  非必填，默认为0
+|25 | language | 语言，(中文/英文等) | string |非必填，可以是空串
+|26 | definition | 清晰度，（超清、高清、流畅等） | string | 非必填，可以是空串
+|27 | introduction | 视频简介 | string | 非必填，可以是空串
+|28 | poster_url | 海报url | string | 必填
+|29 | thumb_url | 海报缩略图url | string | 必填
+|30 | token | 播放url或者是播放id | string | 必填
+|31 | extend| 资源方自定义数据，不大于5000 | string | 非必填，可以是空串
+|32 | score| 评分 | float | 非必填
     
 ### 名词解释
 - 合辑页：id等于pid的记录。<b><font face="微软雅黑" color="#FF0000" >备注：所有数据，必须有一条合辑页记录（如果只有一条数据，如电影，可以使该数据pid=id即可，如果有分集数据，例如电视剧“人民的名义”，总共有52集，应该上传53条数据，其中合辑页id=pid）</font></b>
@@ -210,10 +209,11 @@ application/json
 #### 接口返回
 如果数据正常接收，那么接口将返回：
     
-        {
-            "code": 0,
-            "msg": "ok"
-        }
+    {
+		    "status": 0,
+		    "msg": "ok"
+	}
+    
 如果数据非正常接收，那么接口返回：
 
 |错误码 | 错误描述 | 示例 | 
@@ -264,4 +264,25 @@ application/json
 |2003 | 字段值错误 | {"status":2003,"msg":"resource_status error id:1251 line:3"} | 
 |2004 | 同一个请求中，partner不唯一 | {"status":2004,"msg":"partner is not unique line:3"} | 
 
-
+### php代码发送数据示例
+```php
+/**
+     * @param string $data 需要发送的json格式媒资数据
+     * @param        $url 接口地址
+     *
+     * @return string
+     * 成功返回 {status: 0,msg: "ok"}
+ **/
+function post_($data = "", $url) {
+		$opts = array(
+        'http' => array(
+            'method'  => "POST",
+            'header'  => "Content-Type: application/json\r\n",
+            'content' => $data,
+			)
+		);
+		$context = stream_context_create($opts);
+		$ret = file_get_contents($url, false, $context);
+		return $ret;
+	}
+```
