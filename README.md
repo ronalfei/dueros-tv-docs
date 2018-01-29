@@ -9,13 +9,18 @@
     * 详见文档中的黑体部分
 
 
-
 ## Bot-Image-Recognition (图像识别)
-[详细文档](docs/Bot-Image-Recognition.md)
+[多人脸识别详细文档](docs/Bot-Image-Recognition_multi.md)
 
 * ChangeLog
     * 整体的方式有变动, 逻辑上修改得更加友好, 对接时需直接参考[详细文档]
+    
+[单人脸识别详细文档](docs/Bot-Image-Recognition_single.md)
 
+* ChangeLog
+    * 整体的方式有变动, 逻辑上修改得更加友好, 对接时需直接参考[详细文档]
+  
+  
 ## Bot-User-Guide (通用引导)
 [详细文档](docs/Bot-User-Guide.md)
 
