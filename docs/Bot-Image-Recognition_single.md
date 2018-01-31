@@ -10,7 +10,7 @@
             "message_id": "message_id-1344"
         },
         "payload": {
-            "type":"flower"，
+            "type":"flower"
         }
     }
 ```
