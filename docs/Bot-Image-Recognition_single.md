@@ -24,7 +24,7 @@
             "message_id": "message_id-1344"
         },
         "payload": {
-            "type":"face"，
+            "type":"face"
         }
     }
 ```
