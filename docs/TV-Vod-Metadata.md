@@ -189,7 +189,7 @@
 #### 请求方式
 POST
 #### 请求地址
-url: http://s.xiaodu.baidu.com/duertv/data/push?code=\$code&t=\$timestamp
+url: http://duertv.baidu.com/duertv/data/push?code=\$code&t=\$timestamp
 \$timestamp为当前时间戳, 每次请求都要带上来
 \$code的生成方式请联系度秘TV开发人员
 
@@ -233,7 +233,7 @@ application/json
 #### 请求方式
 POST
 #### 请求地址
-url: http://s.xiaodu.baidu.com/duertv/data/pushjson?code=\$code&t=\$timestamp
+url: http://duertv.baidu.com/duertv/data/pushjson?code=\$code&t=\$timestamp
 \$timestamp为当前时间戳, 每次请求都要带上来
 \$code的生成方式请联系度秘TV开发人员
 
