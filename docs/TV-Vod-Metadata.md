@@ -274,7 +274,7 @@ application/json
      * 成功返回 {status: 0,msg: "ok"}
  **/
 function post_($data = "", $url) {
-		$opts = array(
+	$opts = array(
         'http' => array(
             'method'  => "POST",
             'header'  => "Content-Type: application/json\r\n",
