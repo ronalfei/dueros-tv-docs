@@ -51,11 +51,13 @@
       {
         "priority": 1,
         "title": "电视点播",
+        "icon": "icon_url",
         "querys": ["我想看大鱼海棠", "经典电影", ...]
       },
       {
         "priority": 2,
         "title": "人脸识别",
+        "icon": "icon_url",
         "querys": ["这个人是谁", "左边第一个女的是谁", ...]
       },
       ...
