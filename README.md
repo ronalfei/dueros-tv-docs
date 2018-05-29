@@ -9,14 +9,23 @@
     * 详见文档中的黑体部分
 
 
-
 ## Bot-Image-Recognition (图像识别)
-[详细文档](docs/Bot-Image-Recognition.md)
+[多人脸识别详细文档](docs/Bot-Image-Recognition_multi.md)
 
 * ChangeLog
     * 整体的方式有变动, 逻辑上修改得更加友好, 对接时需直接参考[详细文档]
+    
+[单人脸识别详细文档](docs/Bot-Image-Recognition_single.md)
 
+* ChangeLog
+    * 整体的方式有变动, 逻辑上修改得更加友好, 对接时需直接参考[详细文档]
+  
+  
+## Bot-User-Guide (通用引导)
+[详细文档](docs/Bot-User-Guide.md)
 
+* ChangeLog
+    * 整体的方式有变动, 逻辑上修改得更加友好, 对接时需直接参考[详细文档]
 
 ## Bot-TV-Live (电视直播)
 [详细文档](docs/Bot-TV-Live.md)
@@ -88,11 +97,21 @@
 ## Bot-Text-Joke (文本笑话垂类)
 [详细文档](docs/Bot-Text-Joke.md)
 
+
 ## Bot-Poem (度秘写诗)
 [详细文档](docs/Bot-Poem.md)
+
 
 ## Bot-Faq(度秘写诗)
 [详细文档](docs/Bot-Faq.md)
 
+
+## Bot-Phone-Call (打电话垂类)
+[详细文档](docs/bot-Phone-Call.md)
+
+
 ## 媒资数据对接文档
+[详细文档](docs/TV-Vod-Metadata.md)
+
+## 直播点播对接文档
 [详细文档](docs/TV-Vod-Metadata.md)
