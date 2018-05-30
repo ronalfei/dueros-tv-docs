@@ -113,5 +113,5 @@
 ## 媒资数据对接文档
 [详细文档](docs/TV-Vod-Metadata.md)
 
-## 直播点播对接文档
+## 直播数据对接文档
 [详细文档](docs/TV-live-vod.md)
