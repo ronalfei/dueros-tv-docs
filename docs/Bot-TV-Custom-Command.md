@@ -18,11 +18,11 @@ ai.dueros.device_interface.thirdparty.XXXTV.tv_command SwitchChannel 调到[F:Nu
 ai.dueros.device_interface.thirdparty.XXXTV.tv_command Cooking [F:time]提醒我起床
 ```
 ## 模板信息，支持以下4类模板信息。
->[slot_name]表示槽位信息。在与用户的指令进行匹配时，对匹配的内容进行提取，保存在名为slot_name的槽位中，并返回给设备端。slot_name必须在dict.dic中有相应的词典定义。
->[D:slot_name]表示一个匹配词，在与用户的指令进行匹配时，匹配到的内容不会进行提取，也不会返回给设备端。slot_name必须在dict.dic中有相应的词典定义。
->[W:0-2]表示可以匹配0到2个字节长度的任意字符，系统限定最长通配为4个字节。W:0-2不需要在dict.dic中进行定义
->[F:Num]表示可以匹配任意的连续数字的系统函数。不需要在dict.dic中进行定义，默认返回的槽位名为：num。可用F:Num->slot_name进行槽位名的改写，则此时返回的槽位名为：slot_name
->[F:time]表示可以对时间进行匹配的系统函数。不需要在dict.dic中进行定义，默认返回的槽位名为：time。可以解析三种时间类型：50秒，今天早上，5点到8点。
+> [slot_name]表示槽位信息。在与用户的指令进行匹配时，对匹配的内容进行提取，保存在名为slot_name的槽位中，并返回给设备端。slot_name必须在dict.dic中有相应的词典定义。
+> [D:slot_name]表示一个匹配词，在与用户的指令进行匹配时，匹配到的内容不会进行提取，也不会返回给设备端。slot_name必须在dict.dic中有相应的词典定义。
+> [W:0-2]表示可以匹配0到2个字节长度的任意字符，系统限定最长通配为4个字节。W:0-2不需要在dict.dic中进行定义
+> [F:Num]表示可以匹配任意的连续数字的系统函数。不需要在dict.dic中进行定义，默认返回的槽位名为：num。可用F:Num->slot_name进行槽位名的改写，则此时返回的槽位名为：slot_name
+> [F:time]表示可以对时间进行匹配的系统函数。不需要在dict.dic中进行定义，默认返回的槽位名为：time。可以解析三种时间类型：50秒，今天早上，5点到8点。
 
 3.编写词表文件dict.dic,其中包括词表[D:device], [D:model], [D:check]
 词表表头均需以[D:xxx]开始命名。
