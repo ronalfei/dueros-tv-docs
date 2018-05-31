@@ -15,11 +15,23 @@ url: http://duertv.baidu.com/duertv/data/pushchannel?code=\$code&t=\$timestamp
 	    "status": 0,
 	    "msg": "ok"
 	｝
+失败返回  
+
+|错误码 | 错误描述 | 示例 | 
+|---|---|---|
+|1000 | code错误 | {"status":1000,"msg":"error code"} | 
+|1001 | 超时 | {"status":1001,"msg":"time expired"} | 
+|1002 | 数据格式有错误 | {"status":1002,"msg":"data empty or not a valid json"} | 
+|2001 | 字段未设置 | {"status":2001,"msg":"channel_code not set"} | 
+|2002 | 字段值为空 | {"status":2002,"msg":"channel_code is null"} | 
+|2003 | 字段值错误 | {"status":2003,"msg":"resource_status error"} | 
+|2004 | 同一个请求中，partner不唯一 | {"status":2004,"msg":"partner is not unique"} | 
+
 #### 数据字段
 |序号 |  字段名 | 字段类型 | 描述 |是否必填  | 备注 | 
 |---|---|---|---|---|---|
 | 1| channel_code | String | 频道码 | 是 | 由度秘基础频道数据指定的频道码 | 
-| 2| channem_name| String | 频道名称 | 是 | 由度秘基础频道数据指定的频道名称 |
+| 2| channel_name| String | 频道名称 | 是 | 由度秘基础频道数据指定的频道名称 |
 | 3| partner| String | 合作商partner | 是 | 由度秘分配 |
 | 4| alias_name| String | 频道别名 | 否 | 多个别名以半角"/"分割，示例：cctv5/中央五台/中央体育频道 |
 | 5| resource_status| int| 频道状态| 是 | 1正常 -1下线状态 |
@@ -49,6 +61,19 @@ url: http://duertv.baidu.com/duertv/data/pushprogram?code=\$code&t=\$timestamp
 	    "status": 0,
 	    "msg": "ok"
 	｝
+
+失败返回  
+
+|错误码 | 错误描述 | 示例 | 
+|---|---|---|
+|1000 | code错误 | {"status":1000,"msg":"error code"} | 
+|1001 | 超时 | {"status":1001,"msg":"time expired"} | 
+|1002 | 数据格式有错误 | {"status":1002,"msg":"data empty or not a valid json"} | 
+|2001 | 字段未设置 | {"status":2001,"msg":"channel_code not set"} | 
+|2002 | 字段值为空 | {"status":2002,"msg":"channel_code is null"} | 
+|2003 | 字段值错误 | {"status":2003,"msg":"resource_status error"} | 
+|2004 | 同一个请求中，partner不唯一 | {"status":2004,"msg":"partner is not unique"} |
+
 #### 数据字段
 |序号 |  字段名 | 字段类型 | 描述 |是否必填  | 备注 | 
 |---|---|---|---|---|---|
