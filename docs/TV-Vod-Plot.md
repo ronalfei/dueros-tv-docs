@@ -45,7 +45,7 @@ url: http://duertv.baidu.com/duertv/data/pushplot?code=\$code&t=\$timestamp $tim
 | 1| vod_id | String | vod码 | 是 | 厂商提供的vod_id |
 | 2| partner| String | 合作商partner | 是 | 由度秘分配 |
 | 3| episode| int | 当前集 | 是 | |
-| 4| plot_type| string | 剧情类型| 是 | 共2种类型，剧情类型是plot_fragment，镜头类型是person_appearance，台词类型是actor_lines |
+| 4| plot_type| string | 剧情类型| 是 | 共3种类型，剧情类型是plot_fragment，镜头类型是person_appearance，台词类型是actor_lines |
 | 5| plot_info| String| 剧情信息 | 是 | |
 | 6| plot_play_time| int| 剧情时间，单位秒 | 是 | |
 
