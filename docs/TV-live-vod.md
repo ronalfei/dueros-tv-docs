@@ -40,7 +40,7 @@ url: http://duertv.baidu.com/duertv/data/pushchannel?code=\$code&t=\$timestamp
 | 6| extend| String| | 否 | |
 
 #### 请求数据格式及示例
-json格式，一次可以多条，但不能超过10条
+按照以下格式推送数据，一次可以多条，但不能超过10条
 
     {"channel_code":"cctv5","partner":"tcl2","channel_name":"cctv5","alias_name":"cctv5/中央五台/中央体育频道","resource_status":1}
     {"channel_code":"cctv1","partner":"tcl2","channel_name":"cctv1","alias_name":"cctv1/中央一台/中央电视台","resource_status":1}
@@ -93,7 +93,7 @@ url: http://duertv.baidu.com/duertv/data/pushprogram?code=\$code&t=\$timestamp
 | 13| extend| String| | 否 | |
 
 #### 请求数据格式及示例
-按照以下格式，一次可以多条，但不能超过10条
+按照以下格式推送数据，一次可以多条，但不能超过10条
 
     {"channel_code":"cctv5","partner":"tcl2","name":"2018中国杯国际足球锦标赛半决赛","alias_name":"2018中国杯/足球","start_time":"2018-03-25 00:05:00","duration":5400,"resource_status":1,"season":0,"episode":0,"play_date":"2018-03-25"}
     {"channel_code":"cctv5","partner":"tcl2","name":"2018年世界短道速滑锦标赛精选","alias_name":"","start_time":"2018-03-25 01:35:00","duration":6000,"resource_status":1,"season":0,"episode":0,"play_date":"2018-03-25"}
