@@ -55,4 +55,4 @@ url: https://xiaodu.baidu.com/duertv/data/pushplot?code=\$code&t=\$timestamp $ti
 
 json格式，一次可以多条，但不能超过10条
 
-{"partner": "ireader", "resource_id": 123, "category": "测试", "link_click": "http://www.baidu.com","title": "测试", "image_url": "test", "image_width": 100, "image_height": 100 }
+{"partner": "test", "resource_id": 123, "category": "测试", "link_click": "http://www.baidu.com","title": "测试", "image_url": "test", "image_width": 100, "image_height": 100 }
