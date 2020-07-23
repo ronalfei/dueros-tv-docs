@@ -12,7 +12,7 @@ application/json POST
 
 #### 请求地址
 
-url: https://xiaodu.baidu.com/duertv/data/pushplot?code=\$code&t=\$timestamp $timestamp为当前时间戳, 每次请求都要带上来 $code的生成方式请联系度秘TV开发人员
+url: https://xiaodu.baidu.com/duertv/homefeed/pushjson?code=\$code&t=\$timestamp $timestamp为当前时间戳, 每次请求都要带上来 $code的生成方式请联系度秘TV开发人员
 #### 接口返回
 
 成功返回
