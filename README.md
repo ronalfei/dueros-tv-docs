@@ -121,4 +121,4 @@
 [详细文档](docs/TV-Vod-Plot.md)
 
 ## hf数据对接文档
-[详细文档](docs/hf-card-data.md)
+[详细文档](hf-card-data.md)
