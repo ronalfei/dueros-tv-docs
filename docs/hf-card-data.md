@@ -45,7 +45,7 @@ url: https://xiaodu.baidu.com/duertv/homefeed/push?code=\$code&t=\$timestamp $ti
 | 1| template | String | 卡片模板 | 是 | 目前支持三种SINGLE,MULTITY_VERTICAL,MULTITY_HORIZONTAL,分别对应单图卡片、4张竖图卡片、3张横图卡片 |
 | 2| partner | String | 合作商partner | 是 | 由度秘分配 |
 | 3| background| String | 背景图 | 否 | 卡片的背景图 |
-| 4| resourc_id| String | 卡片id | 是 |资源id |
+| 4| resource_id| String | 卡片id | 是 |资源id |
 | 5| title| String | 卡片名称| 是 | 卡片名称 |
 | 6| list_info| list| 资源列表 | 是 |[{"title": "", "link_click":"", "image_url": "", "width": 0, "height": 0, "index": 0},{...}], 具体见list_info说明 |
 
