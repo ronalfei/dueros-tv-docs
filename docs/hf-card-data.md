@@ -54,7 +54,7 @@ url: https://xiaodu.baidu.com/duertv/homefeed/push?code=\$code&t=\$timestamp $ti
 | 字段名 | 字段类型 | 描述 |是否必填 | 备注 |
 |---|---|---|---|---|
 | list_info[].title| String| 标题 | 是 | |
-| list_info[].link_click| String| object| 资源链接 | 是 |{"action": "", "applink": ""} 详见link_click说明|
+| list_info[].link_click| Object| 资源链接 | 是 |{"action": "", "applink": ""} 详见link_click说明|
 | list_info[].image_url| String| 资源图片 | 是 | |
 | list_info[].width| int| 图片宽度 | 否 | |
 | list_info[].height| int| 图片高度 | 否 | |
