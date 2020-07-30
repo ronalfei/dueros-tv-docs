@@ -52,6 +52,7 @@ url: https://xiaodu.baidu.com/duertv/homefeed/push?code=\$code&t=\$timestamp $ti
 #### list_info
  
 | 字段名 | 字段类型 | 描述 |是否必填 | 备注 |
+|---|---|---|---|---|
 | list_info[].title| String| 标题 | 是 | |
 | list_info[].link_click| String| object| 资源链接 | 是 |{"action": "", "applink": ""} 详见link_click说明|
 | list_info[].image_url| String| 资源图片 | 是 | |
@@ -62,6 +63,7 @@ url: https://xiaodu.baidu.com/duertv/homefeed/push?code=\$code&t=\$timestamp $ti
 #### link_click
 
 | 字段名 | 字段类型 | 描述 |是否必填 | 备注 |
+|---|---|---|---|---|
 | link_click[].action| String| app打开后的动作（apk内部自己定义） | 是 | |
 | link_click[].applink| String| 要打开的apk的页面的地址，对应Open指令的app.url | 是 | |
 
