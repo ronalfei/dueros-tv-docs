@@ -49,7 +49,7 @@ url: https://xiaodu.baidu.com/duertv/homefeed/push?code=\$code&t=\$timestamp $ti
 | 5| title| String | 卡片名称| 是 | 卡片名称 |
 | 6| list_info| list| 资源列表 | 是 |[{"title": "", "link_click":"", "image_url": "", "width": 0, "height": 0, "index": 0},{...}], 具体见list_info说明 |
 
-#### list_info
+##### list_info
  
 | 字段名 | 字段类型 | 描述 |是否必填 | 备注 |
 |---|---|---|---|---|
@@ -60,7 +60,7 @@ url: https://xiaodu.baidu.com/duertv/homefeed/push?code=\$code&t=\$timestamp $ti
 | list_info[].height| int| 图片高度 | 否 | |
 | list_info[].index| int| 资源序号 | 否 | |
 
-#### link_click
+##### link_click
 
 | 字段名 | 字段类型 | 描述 |是否必填 | 备注 |
 |---|---|---|---|---|
