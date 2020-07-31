@@ -12,18 +12,16 @@ application/json POST
 
 #### 请求地址
 
-url: https://xiaodu.baidu.com/duertv/homefeed/push?code=\$code&t=\$timestamp $timestamp为当前时间戳, 每次请求都要带上来 $code的生成方式请联系度秘TV开发人员
+url: `https://xiaodu.baidu.com/duertv/homefeed/push?code=\${code}&t=\${timestamp}` $timestamp为当前时间戳, 每次请求都要带上来 $code的生成方式请联系度秘TV开发人员
 #### 接口返回
 
 成功返回
-
+```
 {
-
-"status": 0,
-
-"msg": "ok"
-
+ "status": 0,
+ "msg": "ok"
 ｝
+```
 
 失败返回
 
@@ -74,5 +72,61 @@ url: https://xiaodu.baidu.com/duertv/homefeed/push?code=\$code&t=\$timestamp $ti
 #### 请求数据格式及示例
 
 json格式
-
-{"partner": "ireader", "background": "","resource_id": "1234", "title": "掌阅课外书漫画飙升榜", "template": "MULTITY_VERTICAL", "list_info": [{"title": "疯了！桂宝　5(开心卷)", "link_click": {"action": "android.intent.action.MAIN","applink": "ireader://com.zhangyue.read.edu.scheme/openurl?url=http%3A%2F%2Fk12.zhangyue.com%2Fzybk%2Faudio%2Fdetail%3Fid%3D30020138%26isPlay%3D0%26type%3D1%26reqType%3D26%26launch%3Dinside"}, "image_url": "http://book.img.ireader.com/idc_1/m_4,w_480,h_640,q_80/63621c27/group6/M00/3C/71/CmRaIVjAZeuEBnBKAAAAAHVfmps429758548.jpg?v=5gtBXf5P", "width": 0, "height": 0, "index": 0},{"title": "疯了！桂宝7·欢腾卷", "link_click": {"action": "android.intent.action.MAIN","applink": "ireader://com.zhangyue.read.edu.scheme/openurl?url=http%3A%2F%2Fk12.zhangyue.com%2Fzybk%2Faudio%2Fdetail%3Fid%3D30020138%26isPlay%3D0%26type%3D1%26reqType%3D26%26launch%3Dinside"}, "image_url": "http://book.img.ireader.com/idc_1/m_4,w_480,h_640,q_80/63621c27/group6/M00/3C/71/CmRaIVjAZeuEBnBKAAAAAHVfmps429758548.jpg?v=5gtBXf5P", "width": 0, "height": 0, "index": 0},{"title": "父与子", "link_click": {"action": "android.intent.action.MAIN","applink": "ireader://com.zhangyue.read.edu.scheme/openurl?url=http%3A%2F%2Fk12.zhangyue.com%2Fzybk%2Faudio%2Fdetail%3Fid%3D30020138%26isPlay%3D0%26type%3D1%26reqType%3D26%26launch%3Dinside"}, "image_url": "http://book.img.ireader.com/idc_1/m_4,w_480,h_640,q_80/63621c27/group6/M00/3C/71/CmRaIVjAZeuEBnBKAAAAAHVfmps429758548.jpg?v=5gtBXf5P", "width": 0, "height": 0, "index": 0},{"title": "爱上漫画：Q版美少女漫画技法一学就会", "link_click": {"action": "android.intent.action.MAIN","applink": "ireader://com.zhangyue.read.edu.scheme/openurl?url=http%3A%2F%2Fk12.zhangyue.com%2Fzybk%2Faudio%2Fdetail%3Fid%3D30020138%26isPlay%3D0%26type%3D1%26reqType%3D26%26launch%3Dinside"}, "image_url": "http://book.img.ireader.com/idc_1/m_4,w_480,h_640,q_80/63621c27/group6/M00/3C/71/CmRaIVjAZeuEBnBKAAAAAHVfmps429758548.jpg?v=5gtBXf5P", "width": 0, "height": 0, "index": 0}]}
+```
+{
+    "partner": "ireader",
+    "background": "",
+    "resource_id": "1234",
+    "title": "掌阅课外书漫画飙升榜",
+    "template": "MULTITY_VERTICAL",
+    "list_info": [
+        {
+            "title": "疯了！桂宝　5(开心卷)",
+            "link_click": {
+                "action": "android.intent.action.MAIN",
+                "applink": "ireader://com.zhangyue.read.edu.scheme/openurl?url=http%3A%2F%2Fk12.zhangyue.com%2Fzybk%2Faudio%2Fdetail%3Fid%3D30020138%26isPlay%3D0%26type%3D1%26reqType%3D26%26launch%3Dinside"
+            },
+            "image_url": "http://book.img.ireader.com/idc_1/m_4,w_480,h_640,q_80/63621c27/group6/M00/3C/71/CmRaIVjAZeuEBnBKAAAAAHVfmps429758548.jpg?v=5gtBXf5P",
+            "width": 0,
+            "height": 0,
+            "index": 0
+        },
+        {
+            "title": "疯了！桂宝7·欢腾卷",
+            "link_click": {
+                "action": "android.intent.action.MAIN",
+                "applink": "ireader://com.zhangyue.read.edu.scheme/openurl?url=http%3A%2F%2Fk12.zhangyue.com%2Fzybk%2Faudio%2Fdetail%3Fid%3D30020138%26isPlay%3D0%26type%3D1%26reqType%3D26%26launch%3Dinside"
+            },
+            "image_url": "http://book.img.ireader.com/idc_1/m_4,w_480,h_640,q_80/63621c27/group6/M00/3C/71/CmRaIVjAZeuEBnBKAAAAAHVfmps429758548.jpg?v=5gtBXf5P",
+            "width": 0,
+            "height": 0,
+            "index": 0
+        },
+        {
+            "title": "父与子",
+            "link_click": {
+                "action": "android.intent.action.MAIN",
+                "applink": "ireader://com.zhangyue.read.edu.scheme/openurl?url=http%3A%2F%2Fk12.zhangyue.com%2Fzybk%2Faudio%2Fdetail%3Fid%3D30020138%26isPlay%3D0%26type%3D1%26reqType%3D26%26launch%3Dinside"
+            },
+            "image_url": "http://book.img.ireader.com/idc_1/m_4,w_480,h_640,q_80/63621c27/group6/M00/3C/71/CmRaIVjAZeuEBnBKAAAAAHVfmps429758548.jpg?v=5gtBXf5P",
+            "width": 0,
+            "height": 0,
+            "index": 0
+        },
+        {
+            "title": "爱上漫画：Q版美少女漫画技法一学就会",
+            "link_click": {
+                "action": "android.intent.action.MAIN",
+                "applink": "ireader://com.zhangyue.read.edu.scheme/openurl?url=http%3A%2F%2Fk12.zhangyue.com%2Fzybk%2Faudio%2Fdetail%3Fid%3D30020138%26isPlay%3D0%26type%3D1%26reqType%3D26%26launch%3Dinside"
+            },
+            "image_url": "http://book.img.ireader.com/idc_1/m_4,w_480,h_640,q_80/63621c27/group6/M00/3C/71/CmRaIVjAZeuEBnBKAAAAAHVfmps429758548.jpg?v=5gtBXf5P",
+            "width": 0,
+            "height": 0,
+            "index": 0
+        }
+    ]
+}
+```
+#### 实例代码Py版本
+```
+```
