@@ -70,8 +70,8 @@ url: http://xiaodu.baidu.com/duertv/data/pushugc?code=\$code&t=\$timestamp
 ### 请求数据格式及示例
 按照以下格式推送数据，一次可以多条，但不能超过10条
 
-    {"channel_code":"cctv5","partner":"tcl2","channel_name":"cctv5","alias_name":"cctv5/中央五台/中央体育频道","resource_status":1}
-    {"channel_code":"cctv1","partner":"tcl2","channel_name":"cctv1","alias_name":"cctv1/中央一台/中央电视台","resource_status":1}
+    {"id": "39221","pid": "39221", "partner": "test","resource_status": 1,"name": "英才发掘团","play_url": "http://127.0.0.1/123456","cover_url":"http://192.168.80.45/poster/930.jpg","tag":"生活/欢乐/搞笑","first_category":"美食","duration":100}
+    {"id": "39222","pid": "39222", "partner": "test","resource_status": 1,"name": "英才发掘团","play_url": "http://127.0.0.1/123456","cover_url":"http://192.168.80.45/poster/930.jpg","tag":"生活/欢乐/搞笑","first_category":"美食","duration":100}
 
 
 
@@ -99,8 +99,8 @@ url: http://duertv.baidu.com/duertv/data/pushprogram?code=\$code&t=\$timestamp
 |1000 | code错误 | {"status":1000,"msg":"error code"} | 
 |1001 | 超时 | {"status":1001,"msg":"time expired"} | 
 |1002 | 数据格式有错误 | {"status":1002,"msg":"data empty or not a valid json"} | 
-|2001 | 字段未设置 | {"status":2001,"msg":"channel_code not set"} | 
-|2002 | 字段值为空 | {"status":2002,"msg":"channel_code is null"} | 
+|2001 | 字段未设置 | {"status":2001,"msg":"name not set"} | 
+|2002 | 字段值为空 | {"status":2002,"msg":"name is null"} | 
 |2003 | 字段值错误 | {"status":2003,"msg":"resource_status error"} | 
 |2004 | 同一个请求中，partner不唯一 | {"status":2004,"msg":"partner is not unique"} |
 
