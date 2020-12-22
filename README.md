@@ -116,6 +116,9 @@
 ## 直播数据对接文档
 [详细文档](docs/TV-live-vod.md)
 
+## UGC数据对接文档
+[详细文档](docs/UGC-Vod-Metadata.md)
+
 ## 剧情数据对接文档
 [详细文档](docs/TV-Vod-Plot.md)
 
