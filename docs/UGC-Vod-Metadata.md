@@ -64,8 +64,8 @@ url: http://xiaodu.baidu.com/duertv/data/pushugc?code=\$code&t=\$timestamp
 | 32| last_modify_time| int | 资源更新时间戳 | 否 | unix时间戳 |
 | 33| create_time | string | 资源生成时间 | 否 | unix时间戳 |
 | 34| cost | string | 付费标识 | 否 | 免费、付费、vip…… |
-| 35| cost_info | string | 付费信息 | 否 | json，示例：{vip_info.xiaodu_vip=1} |
-| 36| extend | string | 扩展信息 | 否 | |
+| 35| cost_info | string | 付费信息 | 否 | json，示例：{"vip_info.xiaodu_vip":1} |
+| 36| extend | string | 扩展信息 | 否 | json |
 
 ### 请求数据格式及示例
 按照以下格式推送数据，一次可以多条，但不能超过10条
