@@ -54,7 +54,7 @@ url: http://xiaodu.baidu.com/duertv/data/pushugc?code=\$code&t=\$timestamp
 | 22| preview_video_width | int | 预览视频宽度 | 否 |  |
 | 23| video_height | int | 视频高 | 否 |  |
 | 24| video_width | int | 视频宽 | 否 |  |
-| 25| video_size | int | 视频资源大小 | 否 |  |
+| 25| video_size | int | 视频资源大小 | 否 | 单位：kb |
 | 26| video_info_ext | string | 视频扩展信息 | 否 |  |
 | 27| video_score | double | 视频综合质量打分 | 否 |  |
 | 28| comment_cnt | int | 评论数 | 否 |  |

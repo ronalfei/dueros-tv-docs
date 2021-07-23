@@ -5,7 +5,7 @@
 #### 请求方式
 application/json POST
 #### 请求地址
-url: http://duertv.baidu.com/duertv/data/pushchannel?code=\$code&t=\$timestamp 
+url: http://xiaodu.baidu.com/duertv/data/pushchannel?code=\$code&t=\$timestamp 
 \$timestamp为当前时间戳, 每次请求都要带上来
 \$code的生成方式请联系度秘TV开发人员
 #### 接口返回
@@ -53,7 +53,7 @@ url: http://duertv.baidu.com/duertv/data/pushchannel?code=\$code&t=\$timestamp
 #### 请求方式
 application/json POST
 #### 请求地址
-url: http://duertv.baidu.com/duertv/data/pushprogram?code=\$code&t=\$timestamp 
+url: http://xiaodu.baidu.com/duertv/data/pushprogram?code=\$code&t=\$timestamp 
 \$timestamp为当前时间戳, 每次请求都要带上来
 \$code的生成方式请联系度秘TV开发人员
 #### 接口返回
