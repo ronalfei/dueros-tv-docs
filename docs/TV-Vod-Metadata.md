@@ -29,12 +29,12 @@
 |10 | category | 分类，用/分割 | string | 非必填,可以是空字符串
 |11 | source_type | 资源的其他分类字段（业务方可以根据自己需要将某个分类放入该字段） | string | 否，可以是空字符串
 |12 | tag | 标签，用/分割 | string | 非必填,可以是空字符串
-|13 | duration | 时长(秒) | int | 非必填，默认为0
+|13 | duration | 时长(秒) | int | 必填，默认为0
 |14 | season | 季、部 | int | 非必填,默认为1
-|15 | total_episodes | 总集数 | int| 非必填，默认为1
-|16 | episode | 当前集 | int| 非必填，默认为1
-|17 | director | 导演，用/分割 | string | 非必填，可以为空串
-|18 | actor | 演员， 用/分割 | string | 非必填，可以为空串
+|15 | total_episodes | 总集数 | int| 必填，默认为1
+|16 | episode | 当前集 | int| 必填，默认为1
+|17 | director | 导演，用/分割 | string | 必填，可以为空串
+|18 | actor | 演员， 用/分割 | string | 必填，可以为空串
 |19 | region | 地域，用/分割 | string | 非必填，可以为空串
 |20 | release_date | 发布年代，精确到年,数据格式为yyyy-mm-dd或者yyyy,输出yyyy | int | 非必填
 |21 | update_time | 更新时间， yyyyMMDD（示例：20171108） | int | 非必填
@@ -49,8 +49,8 @@
 |30 | token | 播放url或者是播放id | string | 必填
 |31 | extend| 资源方自定义数据，不大于5000 | string | 非必填，可以是空串
 |32 | score| 评分 | float | 非必填
-|33 | content_type| 内容类型。1:正片;2:特辑;3:预告片;4:片花; 5:花絮;6:宣传片;7:片段;8-25:其他 | int | 非必填
-|34 | data_type| 视频类型。ugc:UGC视频;pgc:PGC视频 | string | 非必填
+|33 | content_type| 内容类型。1:正片;2:特辑;3:预告片;4:片花; 5:花絮;6:宣传片;7:片段;8-25:其他 | int | 必填
+|34 | data_type| 视频类型。ugc:UGC视频;pgc:PGC视频 | string | 必填
     
 ### 名词解释
 - 合辑页：id等于pid的记录。<b><font face="微软雅黑" color="#FF0000" >备注：所有数据，必须有一条合辑页记录（如果只有一条数据，如电影，可以使该数据pid=id即可，如果有分集数据，例如电视剧“人民的名义”，总共有52集，应该上传53条数据，其中合辑页id=pid）</font></b>
